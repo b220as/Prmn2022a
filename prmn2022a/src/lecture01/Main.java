@@ -43,7 +43,7 @@ public class Main {
         //kadai 1-3
         int age ;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("ageに任意の値を入力:");
+        System.out.print("ageに任意の値を入力:");
         age = scanner.nextInt();
         if(age<20){
             System.out.println("I am "+age+" years old so I cannot drink liquor.");
@@ -63,7 +63,7 @@ public class Main {
                 sum += array[j];
             }
         }
-        System.out.println(sum+"");
+        System.out.println(sum);
 
         //kadai 1-5
         int[] score = {41,85,72,38,80};
@@ -71,11 +71,11 @@ public class Main {
             System.out.print(i+"番 "+score[i]+"点　");
             if(score[i]<60){
                 System.out.println("不可");
-            }else if(60<=score[i] && score[i]<70){
+            }else if(score[i]<70){
                 System.out.println("可");
-            }else if(70<=score[i] && score[i]<80){
+            }else if(score[i]<80){
                 System.out.println("良");
-            }else if(80<=score[i] && score[i]<90){
+            }else if(score[i]<90){
                 System.out.println("優");
             }else{
                 System.out.println("秀");
