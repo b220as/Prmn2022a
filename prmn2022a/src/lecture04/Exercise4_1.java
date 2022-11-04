@@ -1,23 +1,27 @@
 package lecture04;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Exercise4_1 {
     public static void main(String[] args) {
-        Fighter fighter1 = new Fighter(300,65,"Fighter1");
-        Fighter fighter2 = new Fighter(200,80,"Fighter2");
+        List<Fighter> fighters = new ArrayList<Fighter>();
+        fighters.add(new Fighter(300,65,"一郎"));
+        fighters.add(new Fighter(200,80,"二郎"));
 
-        while(fighter1.isAlive() && fighter2.isAlive()){
+        while(fighters.get(0).isAlive() && fighters.get(1).isAlive()){
 
-            fighter1.attack(fighter2);
-            System.out.println(fighter2.name+" の残り hitPoint : "+fighter2.hitPoint);
-            if(! fighter2.isAlive()){
-                System.out.println(fighter2.name+" は倒れた。");
+            fighters.get(0).attack(fighters.get(1));
+            System.out.println(fighters.get(1).getName()+" の残り hitPoint : "+fighters.get(1).getHitPoint());
+            if(! fighters.get(1).isAlive()){
+                System.out.println(fighters.get(1).getName()+" は倒れた。");
                 break;
             }
 
-            fighter2.attack(fighter1);
-            System.out.println(fighter1.name+" の残り hitPoint : "+fighter1.hitPoint);
-            if(! fighter1.isAlive()){
-                System.out.println(fighter1.name+" は倒れた。");
+            fighters.get(1).attack(fighters.get(0));
+            System.out.println(fighters.get(0).getName()+" の残り hitPoint : "+fighters.get(0).getHitPoint());
+            if(! fighters.get(0).isAlive()){
+                System.out.println(fighters.get(1).getName()+" は倒れた。");
                 break;
             }
 
