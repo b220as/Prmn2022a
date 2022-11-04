@@ -12,4 +12,16 @@ public class Fighter {
         this.power = power;
         this.name = name;
     }
+
+    public void attack(Fighter opponent){
+        opponent.hitPoint -= this.power;
+        System.out.println(this.name+" は "+opponent.name+" に "+this.power+" ダメージを与えた。");
+    }
+
+    public boolean isAlive(){
+        if(this.hitPoint <= 0){
+            return false;
+        }
+        return true;
+    }
 }
