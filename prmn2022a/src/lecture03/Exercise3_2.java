@@ -26,8 +26,7 @@ public class Exercise3_2 {
         System.out.println("入力した文字列:");
         int j = 0;
         for(String str :list){
-            System.out.println("["+j+"] "+str);
-            j ++;
+            System.out.println("["+list.indexOf(str)+"] "+str); //list.indexOf(str) でインデックス取得できる
         }
     }
 }

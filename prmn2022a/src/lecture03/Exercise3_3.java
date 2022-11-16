@@ -8,8 +8,9 @@ public class Exercise3_3 {
 
         System.out.print("一つ目の整数を入力:");
         String str1 = scanner.nextLine();
-        Integer int1 = null;
-        int num1 = int1.parseInt(str1);
+        //Integer int1 = null;
+        //int num1 = int1.parseInt(str1);
+        int num1 = Integer.parseInt(str1);
 
         System.out.print("二つ目の整数を入力:");
         String str2 = scanner.nextLine();
