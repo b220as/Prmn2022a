@@ -1,5 +1,5 @@
 package lecture07.battle;
 
-public interface IBattleMonster {
+public interface IBattleMonster extends IBattleCommand,IBattleOutput {
     void attack();
 }

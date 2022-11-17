@@ -1,6 +1,6 @@
 package lecture07.battle;
 
-public interface IBattleOutput extends IBattleMonster{
+public interface IBattleOutput{
     void attackOutput();
     void remainHpOutput();
     void skillListOutput();

@@ -1,6 +1,6 @@
 package lecture07.monster;
 
-public interface Imonster {
+public interface IMonster {
     String getName();
     int getHP();
     void setHP(int hp);

@@ -1,6 +1,7 @@
 package lecture07.skill;
 
 public class Bubble extends Skill {
-    private String name = "bubble(あわ)";
-    private int power = 10;
+    public Bubble(){
+        super("bubble(あわ)",10);
+    }
 }
